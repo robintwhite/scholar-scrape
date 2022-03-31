@@ -61,7 +61,7 @@ url_scholarly = url.replace('http://scholar.google.com','') # call to url in sch
 
 if num_results:
     article_list = []
-    search_query = scholarly.search_pubs_url(url_scholarly)
+    search_query = scholarly.search_pubs_custom_url(url_scholarly)
     for _ in tqdm(range(num_results)):
         try:
             article = next(search_query)
